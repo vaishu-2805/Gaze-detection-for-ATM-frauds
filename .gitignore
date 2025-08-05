@@ -1,3 +1,23 @@
-# .gitignore
+# Ignore Python cache files
 __pycache__/
+*.pyc
+*.pyo
+
+# Ignore the shoulder-surfing directory and its contents
 shoulder-surfing/
+
+# Ignore specific large files in the shoulder-surfing directory
+shoulder-surfing/Lib/site-packages/cv2/cv2.pyd
+shoulder-surfing/Lib/site-packages/mediapipe/python/opencv_world3410.dll
+shoulder-surfing/Lib/site-packages/jaxlib/jax_common.dll
+
+# Ignore all DLL and PYD files
+*.dll
+*.pyd
+
+# Ignore other unnecessary files
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
